@@ -1,16 +1,23 @@
-# Personal portfolio website
+# Tarik Salay — Personal portfolio website
 
-Source for [tariksalay.github.io](https://tariksalay.github.io/).
+Source for [tariksalay.github.io](https://tariksalay.github.io/), a static personal website with professional experience and selected links to independent GitHub repositories.
 
-This is a historical static portfolio built with HTML, CSS, and JavaScript. The content refresh in this branch updates professional positioning, corrects outdated repository links and project summaries, and adds current experience while retaining the original layout, assets, and scripts.
+## About this documentation update
 
-## Review checklist
+The existing HTML, CSS, JavaScript, typography, and layout have been retained. The proposed changes **only adjust portfolio text, correct broken project links, and provide this README**.
 
-- [ ] Review the new Data Analytics Lead headline and experience description for accuracy.
-- [ ] Check each updated project link.
-- [ ] Confirm location, contact details, and older experience entries.
-- [ ] Preview the static page across desktop and mobile before publishing.
+The refreshed copy:
 
-**Scope:** Content/links only; not a website framework migration or redesign. No performance, accessibility, or cross-browser testing is claimed.
+- Identifies the portfolio as analytics and data engineering focused.
+- Clarifies the status and scope of older research/coursework prototypes without inventing validation metrics.
+- Fixes outdated repository links.
+- Adds a link to the existing Interpol data-pipeline repository.
+- Clarifies separate major and mathematics/statistics minor GPAs.
 
-[GitHub profile](https://github.com/tariksalay)
+## Before publishing
+
+1. Review the career dates, locations, descriptions, testimonials and profile image.
+2. Preview the page on desktop and mobile to check the layout and links.
+3. Merge the draft PR when the content is accurate.
+
+No CSS, JavaScript behavior, backend code or dependency setup was changed in this PR.
