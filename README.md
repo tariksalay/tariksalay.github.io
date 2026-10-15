@@ -1,23 +1,24 @@
-# Tarik Salay — Personal portfolio website
+# Alternative portfolio — review draft
 
-Source for [tariksalay.github.io](https://tariksalay.github.io/), a static personal website with professional experience and selected links to independent GitHub repositories.
+This branch contains a dark, responsive alternative to [tariksalay.github.io](https://tariksalay.github.io/), designed for Data Analytics Lead and Data Engineering roles.
 
-## About this documentation update
+## Design
 
-The existing HTML, CSS, JavaScript, typography, and layout have been retained. The proposed changes **only adjust portfolio text, correct broken project links, and provide this README**.
+- Retains the existing site portrait and its original recommendation testimonials
+- Animated visual audio waveform inspired by Claude's original design; purely decorative, no automatic audio playback
+- Seven featured original project repositories and additional historical projects, excluding online banking
+- Short section titles and simplified headers
+- Experience includes STEM Leader at the National Inventors Hall of Fame (June–August 2018), with FORKaiA titled Data Scientist
+- Education includes major, minor, GPAs, relevant coursework and five certificates/training programs
+- No external JavaScript frameworks, data collection or backend logic
 
-The refreshed copy:
+## Preview
 
-- Identifies the portfolio as analytics and data engineering focused.
-- Clarifies the status and scope of older research/coursework prototypes without inventing validation metrics.
-- Fixes outdated repository links.
-- Adds a link to the existing Interpol data-pipeline repository.
-- Clarifies separate major and mathematics/statistics minor GPAs.
+Open `index.html` using a browser or view the ChatGPT-provided desktop and mobile previews. GitHub Pages still serves the current site from `master`; this branch is **not published**.
 
-## Before publishing
+## Safety
 
-1. Review the career dates, locations, descriptions, testimonials and profile image.
-2. Preview the page on desktop and mobile to check the layout and links.
-3. Merge the draft PR when the content is accurate.
+Only `index.html` and this documentation file were updated in the draft PR. Your existing repository structure, other project code, and current live website remain untouched until you explicitly choose to merge.
 
-No CSS, JavaScript behavior, backend code or dependency setup was changed in this PR.
+The current light design can be restored from the normal Git history, and Claude's original version is preserved in `backup/claude-portfolio-2026-10-15`.
+
