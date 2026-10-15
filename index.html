@@ -51,6 +51,47 @@
     @media(max-width:760px){.nav{min-height:72px}.nav-links{gap:15px}.nav-links a{font-size:11px}.nav-contact{display:none}.hero{padding:65px 0 72px}.hero-grid{grid-template-columns:1fr}.hero h1{max-width:600px}.system{max-width:570px;margin:20px auto 0;width:100%}.trust-grid{grid-template-columns:repeat(2,1fr)}section.block{padding:75px 0}.services{grid-template-columns:1fr}.service{min-height:0}.service h3{margin:20px 0 10px}.projects{grid-template-columns:1fr}.project.primary{grid-row:auto;min-height:490px}.experience{grid-template-columns:1fr}.job:nth-child(2){border-color:#32404e}.stack-grid{grid-template-columns:1fr}.stack-col{padding-bottom:20px}.sect-top{align-items:flex-start;flex-direction:column}.cta-inner{flex-direction:column;align-items:flex-start}.education{flex-direction:column}.education small{text-align:left}}
     @media(max-width:480px){.shell{padding:0 20px}.nav-links{gap:14px}.nav-links a:nth-child(2){display:none}.brand{font-size:16px}.hero h1{font-size:54px}.intro{font-size:16px}.hero .status{font-size:10px}.actions{gap:10px}.btn{padding:12px 15px}.system{padding:15px}.source{padding:11px 4px;font-size:10px}.graphic .graph-node{font-size:10px}.project{padding:23px}.project.primary{min-height:460px}.project.primary h3{font-size:29px}.trust-grid span{font-size:11px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.project,.service{transition:none}}
+
+    /* Refinements: preserve the original portfolio's personality and animated sound-wave visual */
+    .hero-person{display:flex;align-items:center;gap:17px;margin-bottom:28px}
+    .hero-avatar{position:relative;width:70px;height:70px;flex:none;display:grid;place-items:center;border:2px solid #7bdbc5;border-radius:50%;box-shadow:0 0 0 6px rgba(145,235,205,.065);background:#1d3542;overflow:hidden}.hero-initials{font-size:20px;color:#aeecd6;letter-spacing:.08em;font-weight:750}.hero-portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%;font-size:0;color:transparent}
+    .hero-person .status{margin:0 0 5px}.hero-name{font-weight:650;color:#d4e6e4;font-size:13px;letter-spacing:.04em}
+    .sect-head h2{font-size:clamp(33px,3.8vw,49px)}
+    .signal-band{background:#111b2a;border-top:1px solid #2b3d50;border-bottom:1px solid #2b3d50;padding:25px 0 29px;overflow:hidden}
+    .signal-shell{display:grid;grid-template-columns:155px 1fr;align-items:center;gap:25px}
+    .signal-shell .eyebrow{font-size:10px;line-height:1.6}
+    .soundwave{height:80px;width:100%;display:flex;align-items:center;justify-content:center;gap:3px;overflow:hidden}
+    .soundwave i{display:block;flex:1;min-width:2px;max-width:8px;height:var(--h);border-radius:3px;background:linear-gradient(180deg,#5b84fd,#91ebcd);transform-origin:center;animation:sound-pulse 1.75s ease-in-out infinite alternate;animation-delay:calc(var(--i)*-23ms)}
+    @keyframes sound-pulse{from{transform:scaleY(.68);opacity:.72}to{transform:scaleY(1.06);opacity:1}}
+    .more-projects{display:flex;align-items:center;flex-wrap:wrap;gap:12px 20px;margin-top:25px;padding:24px 0 4px;border-top:1px solid #2a3b48}
+    .more-projects .more-label{color:var(--muted);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-right:10px}
+    .more-projects a{font-size:13px;color:#cedede;text-decoration:underline;text-decoration-color:#5b7778;text-underline-offset:4px}
+    .more-projects a:hover{color:var(--mint)}
+    .credentials{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .credential-card{border:1px solid #354b55;border-radius:10px;background:#151f2d;padding:30px}
+    .credential-kicker{color:var(--mint);font-size:11px;letter-spacing:.085em;text-transform:uppercase;font-weight:730}
+    .credential-card h3{font-size:22px;letter-spacing:-.045em;margin:12px 0 9px;line-height:1.3}
+    .credential-card p{color:var(--muted);font-size:13px;line-height:1.7}
+    .credential-card .credential-minor{color:#d9e8e5;font-size:14px;margin-bottom:17px}
+    .credential-gpa{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:15px}
+    .credential-gpa span{border:1px solid #456a66;border-radius:5px;color:#c8f2e5;padding:5px 9px;font-size:12px}
+    .credential-card h4{font-size:12px;margin:25px 0 11px;color:#eef7f2;letter-spacing:.02em}
+    .coursework{display:flex;flex-wrap:wrap;gap:8px}
+    .coursework span{font-size:12px;border:1px solid #3c5162;background:#1d2d3d;color:#c4d7dc;padding:7px 9px;border-radius:5px}
+    .credential-certifications ul{list-style:none;margin:14px 0 0;padding:0}
+    .credential-certifications li{display:flex;align-items:flex-start;gap:15px;padding:10px 0;border-bottom:1px solid #2a3d49;font-size:13px}
+    .credential-certifications li:last-child{border-bottom:none}
+    .credential-certifications li strong{min-width:65px;color:var(--mint);font-size:12px}
+    .credential-certifications li span{color:#ccdce0}
+    .recommendations{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .recommendations blockquote{margin:0;background:#141e2b;border:1px solid #30444f;border-left:3px solid #91ebcd;border-radius:8px;padding:28px}
+    .recommendations blockquote p{font-size:13px;line-height:1.8;color:#c4d0d6;margin:0 0 23px}
+    .recommendations blockquote footer{display:flex;flex-direction:column;gap:1px;font-size:12px;background:none;border:0;padding:0;color:#b2c7cb}
+    .recommendations blockquote footer strong{color:#f1faf5;font-size:13px}
+    .recommendations blockquote footer span{color:#9bb0b8}
+    @media(max-width:760px){.credentials,.recommendations{grid-template-columns:1fr}.signal-shell{grid-template-columns:1fr;gap:13px}.soundwave{height:64px}.credential-card{padding:23px}.recommendations blockquote{padding:24px}}
+    @media(max-width:480px){.hero-avatar{width:58px;height:58px}.hero-person{gap:13px}.soundwave{gap:2px}.credential-certifications li{gap:10px}.credential-certifications li strong{min-width:58px}}
+    @media(prefers-reduced-motion:reduce){.soundwave i{animation:none}}
   </style>
 </head>
 <body>
@@ -66,7 +107,7 @@
   <div class="hero">
     <div class="shell hero-grid">
       <div>
-        <div class="status"><span class="dot" aria-hidden="true"></span> Data Analytics Lead &amp; Engineer</div>
+        <div class="hero-person"><span class="hero-avatar" aria-hidden="true"><span class="hero-initials">TS</span><img class="hero-portrait" src="assets/images/tarik.jpg" width="70" height="70" alt="" decoding="async"></span><div><div class="status"><span class="dot" aria-hidden="true"></span> Data Analytics Lead &amp; Engineer</div><div class="hero-name">Tarik Salay</div></div></div>
         <h1>Building data.<br><em>Driving clarity.</em></h1>
         <p class="intro">I'm Tarik. I turn fragmented data into trusted reporting, scalable pipelines, and clearer business decisions. My work sits at the intersection of <strong style="color:#f0faf5">data engineering, analytics, and business intelligence.</strong></p>
         <div class="actions"><a class="btn btn-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a><a class="btn btn-line" href="https://www.linkedin.com/in/tariksalay/">LinkedIn <span aria-hidden="true">↗</span></a></div>
@@ -88,7 +129,7 @@
   <div class="divider-bar"><div class="shell trust-grid" aria-label="Specialties"><span><strong>Microsoft Fabric</strong></span><span>Power BI &amp; DAX</span><span>Python &amp; PySpark</span><span>SQL &amp; Modeling</span></div></div>
   <section id="about" class="block">
     <div class="shell">
-      <div class="sect-top"><div class="sect-head"><div class="eyebrow">01 / What I do</div><h2>Analytics that works<br>outside the dashboard.</h2></div><p>Good analytics starts with trustworthy data and ends with decisions people can act on. My focus spans the systems in between.</p></div>
+      <div class="sect-top"><div class="sect-head"><div class="eyebrow">01 / Focus</div><h2>Expertise</h2></div></div>
       <div class="services">
         <div class="service"><span class="num">01 / ENGINEER</span><h3>Build the foundation</h3><p>Integrate CRM, ERP and operational data into reliable pipelines and well-structured models that teams can depend on.</p></div>
         <div class="service"><span class="num">02 / DEFINE</span><h3>Make metrics consistent</h3><p>Bring clarity to KPI definitions, business logic and semantic models so everyone works from the same numbers.</p></div>
@@ -96,9 +137,12 @@
       </div>
     </div>
   </section>
+  <div class="signal-band" aria-label="Decorative animated audio waveform inspired by the original portfolio design">
+    <div class="shell signal-shell"><div class="eyebrow">Signal / Processing / Insight</div><div class="soundwave" aria-hidden="true"><i style="--h:8%;--i:0" aria-hidden="true"></i><i style="--h:9%;--i:1" aria-hidden="true"></i><i style="--h:11%;--i:2" aria-hidden="true"></i><i style="--h:13%;--i:3" aria-hidden="true"></i><i style="--h:10%;--i:4" aria-hidden="true"></i><i style="--h:12%;--i:5" aria-hidden="true"></i><i style="--h:14%;--i:6" aria-hidden="true"></i><i style="--h:22%;--i:7" aria-hidden="true"></i><i style="--h:68%;--i:8" aria-hidden="true"></i><i style="--h:100%;--i:9" aria-hidden="true"></i><i style="--h:46%;--i:10" aria-hidden="true"></i><i style="--h:18%;--i:11" aria-hidden="true"></i><i style="--h:13%;--i:12" aria-hidden="true"></i><i style="--h:20%;--i:13" aria-hidden="true"></i><i style="--h:52%;--i:14" aria-hidden="true"></i><i style="--h:74%;--i:15" aria-hidden="true"></i><i style="--h:37%;--i:16" aria-hidden="true"></i><i style="--h:15%;--i:17" aria-hidden="true"></i><i style="--h:10%;--i:18" aria-hidden="true"></i><i style="--h:12%;--i:19" aria-hidden="true"></i><i style="--h:9%;--i:20" aria-hidden="true"></i><i style="--h:8%;--i:21" aria-hidden="true"></i><i style="--h:8%;--i:22" aria-hidden="true"></i><i style="--h:8%;--i:23" aria-hidden="true"></i><i style="--h:8%;--i:24" aria-hidden="true"></i><i style="--h:9%;--i:25" aria-hidden="true"></i><i style="--h:11%;--i:26" aria-hidden="true"></i><i style="--h:13%;--i:27" aria-hidden="true"></i><i style="--h:10%;--i:28" aria-hidden="true"></i><i style="--h:12%;--i:29" aria-hidden="true"></i><i style="--h:14%;--i:30" aria-hidden="true"></i><i style="--h:22%;--i:31" aria-hidden="true"></i><i style="--h:68%;--i:32" aria-hidden="true"></i><i style="--h:100%;--i:33" aria-hidden="true"></i><i style="--h:46%;--i:34" aria-hidden="true"></i><i style="--h:18%;--i:35" aria-hidden="true"></i><i style="--h:13%;--i:36" aria-hidden="true"></i><i style="--h:20%;--i:37" aria-hidden="true"></i><i style="--h:52%;--i:38" aria-hidden="true"></i><i style="--h:74%;--i:39" aria-hidden="true"></i><i style="--h:37%;--i:40" aria-hidden="true"></i><i style="--h:15%;--i:41" aria-hidden="true"></i><i style="--h:10%;--i:42" aria-hidden="true"></i><i style="--h:12%;--i:43" aria-hidden="true"></i><i style="--h:9%;--i:44" aria-hidden="true"></i><i style="--h:8%;--i:45" aria-hidden="true"></i><i style="--h:8%;--i:46" aria-hidden="true"></i><i style="--h:8%;--i:47" aria-hidden="true"></i><i style="--h:8%;--i:48" aria-hidden="true"></i><i style="--h:9%;--i:49" aria-hidden="true"></i><i style="--h:11%;--i:50" aria-hidden="true"></i><i style="--h:13%;--i:51" aria-hidden="true"></i><i style="--h:10%;--i:52" aria-hidden="true"></i><i style="--h:12%;--i:53" aria-hidden="true"></i><i style="--h:14%;--i:54" aria-hidden="true"></i><i style="--h:22%;--i:55" aria-hidden="true"></i><i style="--h:68%;--i:56" aria-hidden="true"></i><i style="--h:100%;--i:57" aria-hidden="true"></i><i style="--h:46%;--i:58" aria-hidden="true"></i><i style="--h:18%;--i:59" aria-hidden="true"></i><i style="--h:13%;--i:60" aria-hidden="true"></i><i style="--h:20%;--i:61" aria-hidden="true"></i><i style="--h:52%;--i:62" aria-hidden="true"></i><i style="--h:74%;--i:63" aria-hidden="true"></i><i style="--h:37%;--i:64" aria-hidden="true"></i><i style="--h:15%;--i:65" aria-hidden="true"></i><i style="--h:10%;--i:66" aria-hidden="true"></i><i style="--h:12%;--i:67" aria-hidden="true"></i><i style="--h:9%;--i:68" aria-hidden="true"></i><i style="--h:8%;--i:69" aria-hidden="true"></i><i style="--h:8%;--i:70" aria-hidden="true"></i><i style="--h:8%;--i:71" aria-hidden="true"></i><i style="--h:8%;--i:72" aria-hidden="true"></i><i style="--h:9%;--i:73" aria-hidden="true"></i><i style="--h:11%;--i:74" aria-hidden="true"></i><i style="--h:13%;--i:75" aria-hidden="true"></i><i style="--h:10%;--i:76" aria-hidden="true"></i><i style="--h:12%;--i:77" aria-hidden="true"></i><i style="--h:14%;--i:78" aria-hidden="true"></i><i style="--h:22%;--i:79" aria-hidden="true"></i><i style="--h:68%;--i:80" aria-hidden="true"></i><i style="--h:100%;--i:81" aria-hidden="true"></i><i style="--h:46%;--i:82" aria-hidden="true"></i><i style="--h:18%;--i:83" aria-hidden="true"></i><i style="--h:13%;--i:84" aria-hidden="true"></i><i style="--h:20%;--i:85" aria-hidden="true"></i><i style="--h:52%;--i:86" aria-hidden="true"></i><i style="--h:74%;--i:87" aria-hidden="true"></i><i style="--h:37%;--i:88" aria-hidden="true"></i><i style="--h:15%;--i:89" aria-hidden="true"></i><i style="--h:10%;--i:90" aria-hidden="true"></i><i style="--h:12%;--i:91" aria-hidden="true"></i><i style="--h:9%;--i:92" aria-hidden="true"></i><i style="--h:8%;--i:93" aria-hidden="true"></i><i style="--h:8%;--i:94" aria-hidden="true"></i><i style="--h:8%;--i:95" aria-hidden="true"></i></div></div>
+  </div>
   <section id="projects" class="block">
     <div class="shell">
-      <div class="sect-top"><div class="sect-head"><div class="eyebrow">02 / Selected work</div><h2>Projects, with the<br>technical details.</h2></div><p>Public repositories include engineering prototypes, a university team project, and early machine-learning experiments. Recent business systems work is private.</p></div>
+      <div class="sect-top"><div class="sect-head"><div class="eyebrow">02 / Selected work</div><h2>Projects</h2></div></div>
       <div class="projects">
         <a class="project primary" href="https://github.com/tariksalay/interpol_rednotices" aria-label="See Interpol data pipeline source on GitHub">
           <div class="project-tag"><span>Data engineering / Prototype</span><span class="arrow" aria-hidden="true">↗</span></div>
@@ -107,44 +151,110 @@
           <p>A containerized Python prototype exploring browser-based ingestion, message queues, PostgreSQL persistence and a Flask interface.</p>
           <div class="pill-row"><span class="pill">Python</span><span class="pill">RabbitMQ</span><span class="pill">PostgreSQL</span><span class="pill">Docker</span></div>
         </a>
-        <a class="project" href="https://github.com/tariksalay/commerce-bank-online-banking-dotnet">
-          <div class="project-tag"><span>Team software engineering / Coursework</span><span class="arrow" aria-hidden="true">↗</span></div>
-          <h3>Online Banking<br>Web Application</h3><p>A university group project covering ASP.NET Core MVC, SQL database design, architecture and software-delivery documentation.</p>
-          <div class="pill-row"><span class="pill">.NET</span><span class="pill">SQL</span><span class="pill">Architecture</span></div>
+        <a class="project" href="https://github.com/tariksalay/eight-puzzle-ml-cpp">
+          <div class="project-tag"><span>Algorithms / C++</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <h3>Eight Puzzle<br>Solver</h3><p>A 3×3 sliding-puzzle search exercise using Manhattan-distance heuristics and a priority queue.</p>
+          <div class="pill-row"><span class="pill">C++</span><span class="pill">A*-style search</span><span class="pill">Heuristics</span></div>
         </a>
         <a class="project" href="https://github.com/tariksalay/deep-learning-audio-specification-app">
           <div class="project-tag"><span>Applied ML / Historical prototype</span><span class="arrow" aria-hidden="true">↗</span></div>
-          <h3>Audio Classification<br>Experiment</h3><p>Audio waveform processing, pretrained VGG19 feature extraction and linear SVM classification through a Flask web application.</p>
+          <h3>Audio Classification<br>Experiment</h3><p>Sound waveforms transformed into images for pretrained VGG19 feature extraction and linear SVM classification in Flask.</p>
           <div class="pill-row"><span class="pill">Python</span><span class="pill">VGG19</span><span class="pill">scikit-learn</span></div>
         </a>
+        <a class="project" href="https://github.com/tariksalay/connect-four-ml-python">
+          <div class="project-tag"><span>Game AI / Python</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <h3>Connect Four AI</h3><p>A playable Pygame application where a depth-limited minimax algorithm chooses moves using board heuristics.</p>
+          <div class="pill-row"><span class="pill">Python</span><span class="pill">Pygame</span><span class="pill">Minimax</span></div>
+        </a>
+        <a class="project" href="https://github.com/tariksalay/deep-learning-with-python">
+          <div class="project-tag"><span>ML learning collection</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <h3>Deep Learning<br>with Python</h3><p>Hands-on coursework exploring Keras, NLP, CNNs, LSTMs, clustering and dimensionality reduction.</p>
+          <div class="pill-row"><span class="pill">Keras</span><span class="pill">Python</span><span class="pill">NLP</span></div>
+        </a>
+        <a class="project" href="https://github.com/tariksalay/iot-robotics">
+          <div class="project-tag"><span>Connected devices / Coursework</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <h3>IoT &amp; Robotics</h3><p>Sensor experiments, Arduino, Raspberry Pi, Node-RED flows and connected-device integrations.</p>
+          <div class="pill-row"><span class="pill">Arduino</span><span class="pill">Python</span><span class="pill">Node-RED</span></div>
+        </a>
+        <a class="project" href="https://github.com/tariksalay/IBM-Watson-Studio">
+          <div class="project-tag"><span>Analytics / Course notebooks</span><span class="arrow" aria-hidden="true">↗</span></div>
+          <h3>US Economic<br>Indicators</h3><p>IBM coursework notebooks for exploring GDP and unemployment datasets with pandas and Bokeh.</p>
+          <div class="pill-row"><span class="pill">pandas</span><span class="pill">Bokeh</span><span class="pill">Jupyter</span></div>
+        </a>
+      </div>
+      <div class="more-projects" aria-label="Additional repositories">
+        <span class="more-label">Also explored</span>
+        <a href="https://github.com/tariksalay/Cleveland-Clinic-TensorFlow">TensorFlow heart-disease coursework <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/tariksalay/pyprojects_2015">Early Python exercises <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/tariksalay/car-rental-axure">Car rental UX prototype <span aria-hidden="true">↗</span></a>
       </div>
       <a class="text-link" href="https://github.com/tariksalay?tab=repositories">Browse all repositories <span aria-hidden="true">↗</span></a>
     </div>
   </section>
   <section id="experience" class="block">
     <div class="shell">
-      <div class="sect-top"><div class="sect-head"><div class="eyebrow">03 / Experience</div><h2>From fraud detection<br>to data leadership.</h2></div><p>A background that combines hands-on analytics and engineering with building business-facing reporting systems.</p></div>
+      <div class="sect-top"><div class="sect-head"><div class="eyebrow">03 / Career</div><h2>Experience</h2></div></div>
       <div class="experience">
         <article class="job"><div class="date">2021 — Present</div><h3>Data Analytics Lead</h3><div class="company">Sunlighten · Overland Park, KS</div><p>Lead analytics and reporting initiatives. Work with Microsoft Fabric, Lakehouse pipelines, CRM and ERP integrations, executive Power BI dashboards, and consistent KPI definitions across business functions.</p></article>
         <article class="job"><div class="date">2019 — 2021</div><h3>Data Analyst</h3><div class="company">Spectrum (Charter Communications) · Kansas City, MO</div><p>Analyzed data to identify fraud patterns, built rule-based detection workflows and Tableau dashboards, and supported investigations with Python and SQL.</p></article>
-        <article class="job"><div class="date">2019</div><h3>Data Scientist / Analyst Intern</h3><div class="company">FORKaiA · Irvine, CA</div><p>Worked with early-stage teams on data science challenges, exploratory models and practical applications of machine learning.</p></article>
-        <article class="job"><div class="date">Earlier experience</div><h3>C / Unix development</h3><div class="company">Performance Softech Solutions</div><p>Early software development work spanning C, Unix and programming fundamentals, complementing a later focus on analytics and data platforms.</p></article>
+        <article class="job"><div class="date">2019</div><h3>Data Scientist</h3><div class="company">FORKaiA · Irvine, CA</div><p>Worked with early-stage teams on data science challenges, exploratory models and practical applications of machine learning.</p></article>
+        <article class="job"><div class="date">2018 – 2019</div><h3>C / Unix Development</h3><div class="company">Performance Softech Solutions</div><p>Worked with C and Unix programming concepts, APIs and development tasks as part of early technical training and experience.</p></article>
+        <article class="job"><div class="date">Jun 2018 – Aug 2018</div><h3>STEM Leader</h3><div class="company">National Inventors Hall of Fame</div><p>Guided a group of 20 participants through collaborative STEM activities, encouraging creativity and hands-on problem solving. Built a positive, team-focused learning environment through clear communication, coaching and reliable follow-through.</p></article>
       </div>
     </div>
   </section>
   <section id="toolkit" class="block">
     <div class="shell">
-      <div class="sect-top"><div class="sect-head"><div class="eyebrow">04 / Toolkit</div><h2>Tools follow the problem.<br>Not the other way around.</h2></div></div>
+      <div class="sect-top"><div class="sect-head"><div class="eyebrow">04 / Toolkit</div><h2>Skills</h2></div></div>
       <div class="stack-grid">
         <div class="stack-col"><h3>Data engineering</h3><div class="skill-tags"><span>Microsoft Fabric</span><span>PySpark</span><span>SQL</span><span>Python</span><span>Databricks</span><span>Data Factory</span></div></div>
         <div class="stack-col"><h3>Analytics &amp; BI</h3><div class="skill-tags"><span>Power BI</span><span>DAX</span><span>Tableau</span><span>Domo</span><span>pandas</span><span>Excel</span></div></div>
         <div class="stack-col"><h3>Platforms &amp; workflows</h3><div class="skill-tags"><span>Salesforce</span><span>NetSuite</span><span>Azure DevOps</span><span>Git</span><span>Lakehouse</span><span>KPI design</span></div></div>
       </div>
-      <div class="education"><div><h3>B.S. Computer Science · University of Missouri–Kansas City</h3><p>Minor in Mathematics &amp; Statistics · Graduated 2019 · Dean's List × 4</p></div><small>CS GPA 3.43 · Minor GPA 3.83</small></div>
+
+    </div>
+  </section>
+  <section id="education" class="block">
+    <div class="shell">
+      <div class="sect-top"><div class="sect-head"><div class="eyebrow">05 / Background</div><h2>Education</h2></div></div>
+      <div class="credentials">
+        <article class="credential-card">
+          <div class="credential-kicker">University of Missouri–Kansas City · 2019</div>
+          <h3>B.S. Computer Science</h3>
+          <p class="credential-minor">Minor in Mathematics &amp; Statistics</p>
+          <div class="credential-gpa"><span>CS GPA 3.43</span><span>Minor GPA 3.83</span></div>
+          <p>Dean's List × 4 · Chancellor's Nonresident Scholarship</p>
+          <h4>Relevant coursework</h4>
+          <div class="coursework"><span>Python &amp; Deep Learning</span><span>Software Engineering</span><span>IoT &amp; Robotics</span><span>Artificial Intelligence</span></div>
+        </article>
+        <article class="credential-card credential-certifications">
+          <div class="credential-kicker">Professional development</div>
+          <h3>Certifications &amp; Training</h3>
+          <ul>
+            <li><strong>IBM</strong><span>Data Science Professional Certificate</span></li>
+            <li><strong>Simplilearn</strong><span>Machine Learning Using Python</span></li>
+            <li><strong>DataCamp</strong><span>DAX in Power BI</span></li>
+            <li><strong>Udemy</strong><span>Analyzing and Visualizing Data with Power BI</span></li>
+            <li><strong>Udemy</strong><span>The Complete TIBCO Spotfire Course</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="recommendations" class="block">
+    <div class="shell">
+      <div class="sect-top"><div class="sect-head"><div class="eyebrow">06 / What others say</div><h2>Recommendations</h2></div></div>
+      <div class="recommendations">
+        <blockquote><p>“Tarik is a smart, hardworking and focused young man that takes initiative and uses his brain to think how he can add real value to the team and task at hand. His data science and machine learning skills came in handy at Forkaia where he helped a number of our Idea Lab startups get their data projects up and running.”</p><footer><strong>Ali Sina</strong><span>CEO, FORKaiA</span></footer></blockquote>
+        <blockquote><p>“I knew Tarik as a student before he worked with me at Camp Invention. He is always calm, friendly, and well spoken. Working with him at Camp Invention, I saw him in a different role and found him to be a good problem solver, extraordinarily patient, and an excellent team player. I highly recommend Tarik for any role utilizing his computer science knowledge, especially those that need someone who is easy to work with and a collaborative employee!”</p><footer><strong>Marjory Eisenman</strong><span>Assistant Dean of Engineering</span></footer></blockquote>
+        <blockquote><p>“Tarik is an extremely capable and dedicated IT professionals. He has strong analytical and communication skills which are further enhanced by his solid technical background and his enthusiasm for learning. Tarik works extremely well with classmates, coworkers, and faculty, adapting the internet of things techniques in order to achieve the class milestones. I have known Tarik from last 4 months and I can say that he has a good personality. If he is given a task he will manage it in any condition before reaching me for help. I recommend Tarik for the jobs or positions that he is applying for. Should there be anything related to Tarik I will be happy to discuss it.”</p><footer><strong>Sayed Shah, PhD</strong><span>Professor</span></footer></blockquote>
+        <blockquote><p>“Tarik is hardworking and always willing to pick up and work on the newest technologies. In class, he demonstrates that he is an intelligent and attentive student with great potential. He is always willing to help other students finish their tasks. I was totally surprised by the quality work he submitted for the machine learning project he was working on.”</p><footer><strong>Saria Goudarzvand, PhD</strong><span>Professor</span></footer></blockquote>
+      </div>
+      <a class="text-link" href="https://www.linkedin.com/in/tariksalay/">More recommendations on LinkedIn <span aria-hidden="true">↗</span></a>
     </div>
   </section>
   <section class="block cta" id="contact">
-    <div class="shell cta-inner"><div><div class="eyebrow">05 / Connect</div><h2>Let's make the data<br>make sense.</h2><p>Interested in analytics, business intelligence, or building reliable data platforms? Let's connect.</p></div><div class="actions"><a class="btn btn-primary" href="mailto:tariksalay@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="btn btn-line" href="https://github.com/tariksalay">GitHub <span aria-hidden="true">↗</span></a></div></div>
+    <div class="shell cta-inner"><div><div class="eyebrow">07 / Connect</div><h2>Let's connect.</h2><p>Interested in analytics, business intelligence, or building reliable data platforms? Let's connect.</p></div><div class="actions"><a class="btn btn-primary" href="mailto:tariksalay@gmail.com">Email me <span aria-hidden="true">↗</span></a><a class="btn btn-line" href="https://github.com/tariksalay">GitHub <span aria-hidden="true">↗</span></a></div></div>
   </section>
 </main>
 <footer><div class="shell foot"><span>© <span id="year">2026</span> Tarik Salay. Built with clarity in mind.</span><span><a href="https://www.linkedin.com/in/tariksalay/">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/tariksalay">GitHub</a> &nbsp;·&nbsp; <a href="#top">Back to top ↑</a></span></div></footer>
